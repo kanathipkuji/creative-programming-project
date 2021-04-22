@@ -32,10 +32,10 @@ class Solution:
 ### Language: Python3
 ### Time Complexity: O(n) on average
 
-*       Store a set of nums
-*       For each element *cur* with no consecutive element before it, i.e., *cur - 1* does not exist,z
-        find the largest element belonging to the same consecutive sequence
-*       Keep track of maximum difference between maximum and minimum element in the same sequence
+*	Store a set of nums
+*	For each element *cur* with no consecutive element before it, i.e., *cur - 1* does not exist,z
+    find the largest element belonging to the same consecutive sequence
+*	Keep track of maximum difference between maximum and minimum element in the same sequence
 
 ```
 class Solution:
