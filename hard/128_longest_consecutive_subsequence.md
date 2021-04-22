@@ -6,9 +6,10 @@ https://leetcode.com/problems/longest-consecutive-sequence/
 ### Language: Python3
 ### Time Complexity: O(nlogn)
 
-* 		sort nums, then iteratively increment current maximum length of consecutive subsequence 
-*		achieved by comparing previous element with (current element - 1)
-* 		keep track of maximum legnth with another variable
+* 		Pre-sort nums
+* 		Iteratively increment current maximum length of consecutive subsequence
+        achieved by comparing previous element with (current element - 1)
+* 		Keep track of maximum legnth with another variable
 
 ```
 class Solution:
