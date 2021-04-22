@@ -1,3 +1,12 @@
+# Longest Increasing Subsequence
+https://leetcode.com/problems/longest-increasing-subsequence/
+
+
+## 1st Solution: Dynamic Programming
+### Language: Python3
+### Time Complexity: O(n^2)
+
+*   
 
 ```
 class Solution:
