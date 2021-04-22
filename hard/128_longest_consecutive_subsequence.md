@@ -1,6 +1,8 @@
 # Longest Consecutive Subsequence
+https://leetcode.com/problems/longest-consecutive-sequence/
 
-## 1st Solution:
+
+## 1st Solution: Transform and Conquer
 ### Language: Python3
 ### Time Complexity: O(nlogn)
 
