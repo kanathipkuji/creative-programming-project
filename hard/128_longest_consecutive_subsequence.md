@@ -1,12 +1,14 @@
-// 1st Solution:
-// Language: Python3
-// Time Complexity: O(nlogn)
+# Longest Consecutive Subsequence
 
-// 		sort nums, then iteratively increment current maximum length of consecutive subsequence 
-//		achieved by comparing previous element with (current element - 1)
-// 		keep track of maximum legnth with another variable
+## 1st Solution:
+### Language: Python3
+### Time Complexity: O(nlogn)
 
+* 		sort nums, then iteratively increment current maximum length of consecutive subsequence 
+*		achieved by comparing previous element with (current element - 1)
+* 		keep track of maximum legnth with another variable
 
+```
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         nums.sort()
@@ -21,5 +23,5 @@ class Solution:
             prev = num
             ans = max(ans, count)
         return ans;
-
+```
 
