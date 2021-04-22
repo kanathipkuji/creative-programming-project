@@ -9,7 +9,7 @@ https://leetcode.com/problems/longest-consecutive-sequence/
 * 		Pre-sort nums
 * 		Iteratively increment current maximum length of consecutive subsequence
         achieved by comparing previous element with (current element - 1)
-* 		Keep track of maximum legnth with another variable
+* 		Keep track of maximum length with another variable
 
 ```
 class Solution:
