@@ -1,4 +1,4 @@
-# Longest Consecutive Subsequence
+# Longest Consecutive Sequence
 https://leetcode.com/problems/longest-consecutive-sequence/
 
 
