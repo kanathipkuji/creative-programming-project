@@ -30,7 +30,8 @@ class Solution:
 ### Time Complexity: O(nlogn)
 
 *   Create an array which is always sorted in ascending order with the following properties.
-*    
+*   Element at index *i* stores a tail (last element) of IS with length *i* + 1.
+*   Thus, the length of LIS is equal to the length of IS at index *n* - 1 of the previously defined array.
 
 ```
 class Solution:
