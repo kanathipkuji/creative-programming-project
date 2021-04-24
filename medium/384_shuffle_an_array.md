@@ -1,7 +1,7 @@
 # Shuffle an Array
 https://leetcode.com/problems/shuffle-an-array/
 
-### Solution: Straightforward Implementation with the Help of Methods in Random.
+## Solution: Straightforward Implementation with the Help of Methods in Random.
 ### Language: Python3
 
 ```
