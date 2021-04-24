@@ -22,8 +22,7 @@ class Solution:
 *   Binary Search on a value in range -10^9 to 10^9
 *   For each middle value *mid*, find the number of elements that are less than or equal to *mid*, let *count* store the result.
 *   This can be implemented in O(n) by iterating from the top-right corner.
-*   If *count* is less than k, this means *mid* is less than the *k*th smallest element.
-*
+*   If *count* is less than k, this means *mid* is less than the *k*th smallest element, thus left-half of the range should be discarded.
 
 ```
 class Solution:
