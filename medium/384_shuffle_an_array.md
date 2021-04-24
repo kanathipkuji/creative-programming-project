@@ -1,7 +1,7 @@
 # Shuffle an Array
 https://leetcode.com/problems/shuffle-an-array/
 
-### Solution: Straightforward Implementation with the help of methods in random.
+### Solution: Straightforward Implementation with the Help of Methods in Random.
 
 ```
 class Solution:
