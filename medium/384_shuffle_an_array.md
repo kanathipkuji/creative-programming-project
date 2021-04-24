@@ -8,7 +8,6 @@ class Solution:
     l = []
     def __init__(self, nums: List[int]):
         self.l = nums
-        # self.randomL = nums
 
     def reset(self) -> List[int]:
         """
