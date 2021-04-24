@@ -15,24 +15,37 @@ class Solution:
 ```
 
 
-## 2nd Solution: Dynamic Programming
+## 2nd Solution: Binary Search
 ### Language: Python3
-### Time Complexity: O(nlogn)
+### Time Complexity: O(log(maxVal) * n)
 
-*   Create an array which is always sorted in ascending order with the following properties.
-*   Element at index *i* stores a tail (last element) of IS with length *i* + 1.
-*   Thus, the length of LIS is equal to the length of IS at index *n* - 1 of the previously defined array.
+*   Binary Search on a value in range -10^9 to 10^9
+*   For each middle value *mid*, find the number of elements that are less than or equal to *mid*, let *count* store the result.
+*   This can be implemented in O(n) by iterating from the top-right corner.
+*   If *count* is less than k, this means *mid* is less than the *k*th smallest element.
+*
 
 ```
 class Solution:
-    def lengthOfLIS(self, nums: List[int]) -> int:
-        v = []
-        for num in nums:
-            idx = bisect_left(v, num)
-            if idx == len(v):
-                v.append(num)
+    def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
+        l = -1e9
+        r = 1e9
+        ans = 0
+        
+        while l < r:
+            mid = l + (r - l) // 2
+            count = 0
+            col = len(matrix[0]) - 1
+            for row in range(len(matrix)):
+                while col >= 0 and matrix[row][col] > mid:
+                    col -= 1
+                count += col + 1
+            
+            if count < k:
+                l = mid + 1
             else:
-                v[idx] = num
-        return len(v)
+                r = mid
+        
+        return int(l)
 ```
 
