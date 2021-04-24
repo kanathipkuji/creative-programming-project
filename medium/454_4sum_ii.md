@@ -1,7 +1,7 @@
 # 4Sum II
 https://leetcode.com/problems/4sum-ii/
 
-## 1st Solution: Enumerating & Mapping
+## Solution: Enumerating & Mapping
 ### Language: Python3
 ### Time Complexity: O(n^2)
 
