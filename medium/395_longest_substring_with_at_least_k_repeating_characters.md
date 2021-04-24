@@ -6,9 +6,8 @@ https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-charac
 ### Time Complexity: O(n)
 
 *   Simplify the problem by dividing it into sub-problems
-What is the answer if the satisfying longest substring contains only *maxNumUnique*
-*   For each nums3[m] + nums4[n] == - (nums1[i] + nums2[j]), add the frequency from the hashmap to the result. 
-
+*   What is the answer if the satisfying longest substring contains only *maxNumUnique* unique characters?
+*   For each sub-problem, apply sliding window technique to maintain a window that 
 ```
 class Solution:
     def longestSubstring(self, s: str, k: int) -> int:
