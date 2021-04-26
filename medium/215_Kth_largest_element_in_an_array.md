@@ -5,7 +5,9 @@ https://leetcode.com/problems/kth-largest-element-in-an-array/
 ### Language: C++
 ### Time Complexity: O(n) on average, O(n^2) in the worst case
 
-*   
+*   Implement quick sort.
+*   On each recursion of quick sort, if the pivot chosen is in the *k*-th position after partitioned, then it is the answer.
+*   Because after partitioned, pivot will be moved to the right place if the array is all sorted. 
 
 ```
 typedef vector<int> vi;
