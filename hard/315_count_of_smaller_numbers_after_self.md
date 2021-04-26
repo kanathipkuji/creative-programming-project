@@ -11,18 +11,61 @@ https://leetcode.com/problems/count-of-smaller-numbers-after-self/
 * 	Add *rightCount* to the index the current left pointer is pointing to. 
 
 ```
-class Solution:
-    def longestConsecutive(self, nums: List[int]) -> int:
-        nums.sort()
-        prev = 10000000002
-        count = ans = 0
-        for num in nums:
-            if prev == num: continue;
-            if prev != num - 1:
-                count = 1
-            else:
-                count += 1
-            prev = num
-            ans = max(ans, count)
+typedef vector<pair<int, int>> vii;
+
+class Solution {
+    vector<int> ans;
+    
+    void merge(vii::iterator l, vii::iterator mid, vii::iterator r) {
+        auto l1 = l, l2 = mid;
+        int count = 0, idx = 0, rightCount = 0;
+        vii tmp(r - l);
+        while (l1 < mid && l2 < r) {
+            if (l1->first <= l2->first) {
+                tmp[idx++] = *l1;
+                ans[l1->second] += rightCount;
+                ++l1;
+            } else {
+                tmp[idx++] = *l2;
+                ++rightCount;
+                ++l2;
+            }
+        }
+        while (l1 < mid) {
+            tmp[idx++] = *l1;
+            ans[l1->second] += rightCount;
+            ++l1;
+        }
+        while (l2 < r) {
+            tmp[idx++] = *l2;
+            ++l2;
+        }
+        auto it = l;
+        idx = 0;
+        while (it != r) {
+            *it = tmp[idx++];
+            ++it;
+        }
+    }
+    
+    void mergeSort(vii::iterator l, vii::iterator r) {
+        if (l + 1 == r) return;
+        auto mid = (r - l) / 2  + l;
+        mergeSort(l, mid);         
+        mergeSort(mid, r);
+        merge(l, mid, r);
+    }
+public:
+    vector<int> countSmaller(vector<int>& nums) {
+        int i = 0;
+        vii v;
+        ans.resize(nums.size());
+        for (auto num: nums) {
+            v.emplace_back(num, i);
+            ++i;
+        }
+        mergeSort(v.begin(), v.end());
         return ans;
+    }
+};
 ```
