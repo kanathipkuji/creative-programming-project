@@ -1,7 +1,7 @@
 # Kth Largest Element in an Array
 https://leetcode.com/problems/kth-largest-element-in-an-array/
 
-## 1st Solution: Quick Select
+## Solution: Quick Select
 ### Language: C++
 ### Time Complexity: O(n) on average, O(n^2) in the worst case
 
