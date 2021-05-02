@@ -1,7 +1,7 @@
 # Top K Frequent ELements
 https://leetcode.com/problems/top-k-frequent-elements/
 
-## 1st Solution: Bucket Sort
+## Solution: Bucket Sort
 ### Language: Python3
 ### Time Complexity: O(n) (linear in array size)
 
