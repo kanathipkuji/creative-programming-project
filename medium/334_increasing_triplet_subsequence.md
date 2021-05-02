@@ -5,9 +5,9 @@ https://leetcode.com/problems/increasing-triplet-subsequence/
 ### Language: Python3
 ### Time Complexity: O(n)
 
-*   Let dp[i] be the length of LIS that ends at nums[i].
-*   dp[i] equals the maximum of dp[j] + 1 (j < i) when nums[j] < nums[i]
-*   in which case nums[i] can be appended to the increasing subsequence ending at j. 
+*   Store values that could belong to the first and second element of a increasing (duplet) subsequence in *first* and *second* respectively.
+*   Note that, *first* and *second* can be values of elements from different subsequence. 
+*   If there is an element greater than *second* then an increasing triplet subsequence exists.
 
 ```
 class Solution:
