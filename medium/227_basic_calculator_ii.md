@@ -4,10 +4,6 @@ https://leetcode.com/problems/basic-calculator-ii/
 ## 1st Solution: Evaluation of Infix Expression uisng Stacks  
 ### Language: C++
 
-*   Implement quick sort.
-*   On each recursion of quick sort, if the pivot chosen is in the *k*-th position after partitioned, then it is the answer.
-*   Because after partitioned, pivot will be moved to the right place if the array is all sorted. 
-
 ```
 class Solution {
     int getPrecedence(char op) {
@@ -86,3 +82,36 @@ public:
 };
 ```
 
+## 2nd Solution:  Optimized Version of 1st Solution
+### Language: C++
+
+Regarding the 1st solution, we multiply/divide the value on top of the stack until it reaches lower-precedent operators (+ or -) where we add/subtract the product/quotient from the stack. In this case, a stack is unnecessary since there are only 2 different operator precedences. Therefore, we can omit the stack.
+
+Also, with the use of *stringstream* we eliminate redundant codes to extract the character (or integer).
+
+```
+class Solution {
+    
+public:
+    int calculate(string s) {
+        stringstream ss('+' + s + '+');
+        int val, ans, x;
+        char op;
+        val = ans = 0;
+        while (ss >> op) {
+            if (op == '+' || op == '-') {
+                ans += val;
+                ss >> val;
+                val *= op == '+' ? 1 : -1;
+            } else if (op == '*') {
+                ss >> x;
+                val *= x;
+            } else if (op == '/') {
+                ss >> x;
+                val /= x;
+            }
+        }
+        return ans;
+    }
+};
+```
