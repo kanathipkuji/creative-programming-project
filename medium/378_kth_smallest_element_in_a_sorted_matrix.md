@@ -7,7 +7,7 @@ https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/
 
 *   Flatten a matrix to a sorted list
 
-```
+```python3
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         l = sorted([cell for row in matrix for cell in row])
@@ -24,7 +24,7 @@ class Solution:
 *   This can be implemented in O(n) by iterating from the top-right corner.
 *   If *count* is less than k, this means *mid* is less than the *k*th smallest element, thus left-half of the range should be discarded.
 
-```
+```python3
 class Solution:
     def kthSmallest(self, matrix: List[List[int]], k: int) -> int:
         l = -1e9
