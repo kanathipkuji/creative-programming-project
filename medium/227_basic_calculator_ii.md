@@ -4,7 +4,7 @@ https://leetcode.com/problems/basic-calculator-ii/
 ## 1st Solution: Evaluation of Infix Expression uisng Stacks  
 ### Language: C++
 
-```
+```c++
 class Solution {
     int getPrecedence(char op) {
         switch(op) {
