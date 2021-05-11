@@ -9,7 +9,7 @@ https://leetcode.com/problems/increasing-triplet-subsequence/
 *   Note that, *first* and *second* can be values of elements from different subsequence. 
 *   If there is an element greater than *second* then an increasing triplet subsequence exists.
 
-```
+```python3
 class Solution:
     def increasingTriplet(self, nums: List[int]) -> bool:
         first = nums[0]
