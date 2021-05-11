@@ -11,7 +11,7 @@ https://leetcode.com/problems/longest-consecutive-sequence/
         achieved by comparing previous element with (current element - 1)
 * 	Keep track of maximum length with another variable
 
-```
+```python
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         nums.sort()
@@ -37,7 +37,7 @@ class Solution:
     find the largest element belonging to the same consecutive sequence
 *	Keep track of maximum difference between maximum and minimum element in the same sequence
 
-```
+```python
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
         numsSet = set(nums)
