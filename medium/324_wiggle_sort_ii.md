@@ -9,7 +9,7 @@ https://leetcode.com/problems/wiggle-sort-ii/
 *   And by placing elements from *l* into even indices, *r* into odd indices, the array will be wiggly sorted.
 *   Now, to avoid duplicate numbers being adjacent to each other, one must reverse subarray *l* and *r* before placing them.
 
-```
+```python3
 class Solution:
     def wiggleSort(self, nums: List[int]) -> None:
         """
