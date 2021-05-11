@@ -4,7 +4,7 @@ https://leetcode.com/problems/shuffle-an-array/
 ## Solution: Straightforward Implementation with the Help of Methods in Random.
 ### Language: Python3
 
-```
+```python3
 class Solution:
     l = []
     def __init__(self, nums: List[int]):
