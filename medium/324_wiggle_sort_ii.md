@@ -45,7 +45,7 @@ We can achieve this by using virtual indexing as follows.
 
 Now, we create 3 variables: i, l, r; to keep track of current element, leftmost available odd index, rightmost available even index, respectively.
 
-```
+```python3
 class Solution:
     def wiggleSort(self, nums: List[int]) -> None:
         """
