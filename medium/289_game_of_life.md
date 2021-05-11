@@ -10,7 +10,7 @@ To avoid the use of auxiliary space, we can modify the value of the table so tha
 The solution is to use the second bit to store the result, by compute the old value with |= 2.
 Then, after the table is all processed, we shift the bit by 1 unit to the right in order to retrieve the updated value.
 
-```
+```python
 class Solution:
     def gameOfLife(self, board: List[List[int]]) -> None:
         """
