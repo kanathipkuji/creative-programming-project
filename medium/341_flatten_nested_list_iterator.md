@@ -6,7 +6,7 @@ https://leetcode.com/problems/flatten-nested-list-iterator/
 
 *   Recursively call flatten() to ensure all nestedList get flattened.
 
-```
+```python3
 # """
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
