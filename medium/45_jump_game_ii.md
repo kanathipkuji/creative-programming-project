@@ -11,7 +11,7 @@ https://leetcode.com/problems/jump-game-ii/
 2. For all intervals intercepting the selected one, find the interval with rightmost end, and select that interval.
 3. Repeat 2 until all [0, n - 1] is covered or there are no intervals left.
 
-```
+```python3
 class Solution:
     def jump(self, nums: List[int]) -> int:
         r = nextR = i = 0
