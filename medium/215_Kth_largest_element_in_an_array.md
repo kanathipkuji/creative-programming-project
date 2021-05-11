@@ -9,7 +9,7 @@ https://leetcode.com/problems/kth-largest-element-in-an-array/
 *   On each recursion of quick sort, if the pivot chosen is in the *k*-th position after partitioned, then it is the answer.
 *   Because after partitioned, pivot will be moved to the right place if the array is all sorted. 
 
-```python
+```c++
 typedef vector<int> vi;
 
 class Solution {
