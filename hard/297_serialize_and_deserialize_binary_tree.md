@@ -7,7 +7,7 @@ https://leetcode.com/problems/serialize-and-deserialize-binary-tree/
 * 	The approach transforms the binary tree into a list containing its pre-order traversal.
 * 	In the deserialize() function, store the index of the serialized data, as a reference value, by wrapping the value with a list.
 
-```
+```python
 # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
