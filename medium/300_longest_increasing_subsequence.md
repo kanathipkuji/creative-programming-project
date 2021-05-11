@@ -10,7 +10,7 @@ https://leetcode.com/problems/longest-increasing-subsequence/
 *   dp[i] equals the maximum of dp[j] + 1 (j < i) when nums[j] < nums[i]
 *   in which case nums[i] can be appended to the increasing subsequence ending at j. 
 
-```
+```python
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         n = len(nums)
@@ -33,7 +33,7 @@ class Solution:
 *   Element at index *i* stores a tail (last element) of IS with length *i* + 1.
 *   Thus, the length of LIS is equal to the length of IS at index *n* - 1 of the previously defined array.
 
-```
+```python
 class Solution:
     def lengthOfLIS(self, nums: List[int]) -> int:
         v = []
