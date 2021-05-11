@@ -12,7 +12,7 @@ Then, the longest increasing path is the number of levels of the Breadth First S
 
 Note: Topological sort is done by enqueueing nodes with least indegrees. 
 
-```
+```python
 class Solution:
     def longestIncreasingPath(self, matrix: List[List[int]]) -> int:
         ds = [[0, 1], [0, -1], [1, 0], [-1, 0]]
