@@ -10,7 +10,7 @@ https://leetcode.com/problems/count-of-smaller-numbers-after-self/
 * 	*rightCount* will be the number of smaller elements lying on the latter half at the current iteration.
 * 	Add *rightCount* to the index the current left pointer is pointing to. 
 
-```
+```python
 typedef vector<pair<int, int>> vii;
 
 class Solution {
