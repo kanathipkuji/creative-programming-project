@@ -9,7 +9,7 @@ https://leetcode.com/problems/top-k-frequent-elements/
 *   Then, flatten the bucket to a single list.
 *   Finally, return a list of K elements appearing most frequently (by reversing the bucket).
 
-```
+```python3
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         count = Counter(nums)
