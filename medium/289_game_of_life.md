@@ -1,5 +1,5 @@
 # Game Of Life
-https://leetcode.com/problemset/top-interview-questions/
+https://leetcode.com/problems/game-of-life/
 
 ## Solution: Bitmask
 ### Language: Python3
