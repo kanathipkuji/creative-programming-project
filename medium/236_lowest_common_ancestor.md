@@ -1,5 +1,5 @@
-# Wiggle Sort II
-https://leetcode.com/problems/wiggle-sort-ii/
+# Lowest Common Ancestor of a Binary Tree
+https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/
 
 ## 1st Solution: Recursively solve
 ### Language: Python3
