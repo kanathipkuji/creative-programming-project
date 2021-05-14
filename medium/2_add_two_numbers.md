@@ -1,3 +1,12 @@
+# Add Two Numbers
+https://leetcode.com/problemset/top-interview-questions/
+
+## Solution: Bitmask
+### Language: C++
+
+Create two pointers to the same node. One pointer stays at the root of the linked list, and the other traverses through the list.
+
+```c++
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -37,4 +46,5 @@ public:
         }
         return root->next;
     }
-};
+};       
+```
