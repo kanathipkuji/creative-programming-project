@@ -1,4 +1,10 @@
+# ZigZag Conversion
+https://leetcode.com/problems/zigzag-conversion/solution/
 
+## Solution: Access Index by Row
+### Language: C++
+
+The main observation is that we can access the index of the given array wisely, so that we can push the character visited to the result string one by one.
 
 ```c++
 class Solution {
