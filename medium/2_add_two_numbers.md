@@ -1,7 +1,7 @@
 # Add Two Numbers
-https://leetcode.com/problemset/top-interview-questions/
+https://leetcode.com/problems/add-two-numbers/
 
-## Solution: Bitmask
+## Solution: Straightforward Implementation
 ### Language: C++
 
 Create two pointers to the same node. One pointer stays at the root of the linked list, and the other traverses through the list.
