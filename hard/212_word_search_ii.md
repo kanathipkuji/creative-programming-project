@@ -7,8 +7,7 @@ https://leetcode.com/problems/word-search-ii/
 
 We create a Trie which is a tree that contains a letter on each edges (or can be implemented to contains on each vertices). The characters of the edges through which traversal from the root node to the current node passes, represents a word. If there is a word ending at the current node, store the word to the node. Otherwise, the node does not store the word. 
 
-![image](https://user-images.githubusercontent.com/60181774/119639512-a5038880-be52-11eb-87c7-e2678dd3178b.png)
-
+![image](https://user-images.githubusercontent.com/60181774/119639664-ca909200-be52-11eb-9535-418d11d42a0a.png)
 
 ```c++
 class Solution {
