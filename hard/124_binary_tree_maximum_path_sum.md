@@ -2,8 +2,7 @@
 https://leetcode.com/problems/binary-tree-maximum-path-sum/
 
 ## 1st Solution: Recursion
-### Language: Python3
-### Time Complexity: O(nlogn)
+### Language: C++
 
 We create a recursive function that returns optimal solution for every node, i.e. maximum sum of the tree path starting from the current node.
 Let the value be *f(node)*.
