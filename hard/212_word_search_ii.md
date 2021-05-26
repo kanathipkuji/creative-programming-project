@@ -1,3 +1,19 @@
+# Word Search
+https://leetcode.com/problems/word-search-ii/
+
+## 1st Solution: Recursion
+### Language: Python3
+### Time Complexity: O(nlogn)
+
+We create a recursive function that returns optimal solution for every node, i.e. maximum sum of the tree path starting from the current node.
+Let the value be *f(node)*.
+In that case, we can simply write a recursive form as follows.
+
+* *f(node)* = max{0, max{f(node.left), f(node.right)}} + node.val
+
+*f(node)* will contains the maximum sum of the path that starts from node *node*.
+Therefore, the maximum path of the tree will be equal to *max{f(node.left) + f(node.right) + node.val, f(node.left) + node.val, f(node.right) + node.val}* 
+for all *node* in the tree.
 
 
 
