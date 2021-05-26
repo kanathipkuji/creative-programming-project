@@ -1,3 +1,12 @@
+# Letter Combinations of a Phone Number
+https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+## Solution: Straightforward Implementation with unordered map
+### Language: C++
+
+To remove a value in the randomized set, we need to store the value in a hash map, which can be implemented using unordered_map in C++.
+
+```c++
 class RandomizedSet {
     unordered_map<int, int> Map;
     vector<int> arr;
@@ -41,3 +50,5 @@ public:
  * bool param_2 = obj->remove(val);
  * int param_3 = obj->getRandom();
  */
+```
+
