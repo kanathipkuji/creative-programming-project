@@ -25,7 +25,7 @@ class Solution:
 ```
 
 
-## 2nd Solution: Dynamic Programming
+## 2nd Solution: Maintaining a monotonic array
 ### Language: Python3
 ### Time Complexity: O(nlogn)
 
