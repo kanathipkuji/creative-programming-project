@@ -4,7 +4,7 @@ https://leetcode.com/problems/fraction-to-recurring-decimal/
 ## Solution: Hashing Numerators
 ### Language: Python3
 
-First, notice that there is no need to insert the period '.' when numerator can be divided by denominator, in which case we return the value as a string without performing further actions.
+First, notice that there is no need to insert the period '.' when numerator can be divided by denominator, in which case we return the value as a string without performing further actions. Otherwise, we try to calculate all decimals one by one. We simulate the process of long division in order to find each decimal. On each step, we need to keep track of the current numerator (remainder of previous calculation) to see if it is already calculated, in which case it enters a cycle, i.e., decimals are repeating. So, we can return the calculated quotients so far as a string wrapped by parentheses at the index of first occurence of the numerator, and at the current index. If recurring decimal digit is not found after the processing is done, simply return the string of quotients.
 
 ```python3
 class Solution:
