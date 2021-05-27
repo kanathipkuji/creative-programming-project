@@ -1,7 +1,7 @@
 # Longest Substring with At Least K Repeating Characters
 https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/
 
-## Solution 1st: Sliding Window Technique 
+## 1st Solution: Sliding Window Technique 
 ### Language: Python3
 ### Time Complexity: O(n)
 
@@ -39,7 +39,7 @@ class Solution:
         return ans
 ```
 
-## Solution: Splitting into substrings
+## 2nd Solution: Splitting into substrings
 ### Language: Python3
 ### Time Complexity: O(n)
 
