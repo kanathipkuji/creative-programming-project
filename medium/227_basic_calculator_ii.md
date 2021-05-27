@@ -89,7 +89,7 @@ Regarding the 1st solution, we multiply/divide the value on top of the stack unt
 
 Also, with the use of *stringstream* we eliminate redundant codes to extract the character (or integer).
 
-```
+```c++
 class Solution {
     
 public:
