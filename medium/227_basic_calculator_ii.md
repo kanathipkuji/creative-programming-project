@@ -1,7 +1,7 @@
 # Basic Calculator II
 https://leetcode.com/problems/basic-calculator-ii/
 
-## 1st Solution: Evaluation of Infix Expression uisng Stacks  
+## 1st Solution: Evaluation of Infix Expression using Stacks  
 ### Language: C++
 
 ```c++
