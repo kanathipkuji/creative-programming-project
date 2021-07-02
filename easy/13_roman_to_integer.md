@@ -2,7 +2,7 @@
 https://leetcode.com/problems/roman-to-integer/
 
 ## Solution: Storing values on an array
-### Language: C++
+### Language: Python 3
 ### Time Complexity: O(n)
 
 We process the value character by character while checking if it should be subtracted or not by looking into the previous character.
