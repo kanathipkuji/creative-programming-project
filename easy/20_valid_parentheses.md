@@ -1,3 +1,13 @@
+# Valid Parentheses
+https://leetcode.com/problems/valid-parentheses/
+
+## Solution: Implementation using stack
+### Language: C++
+### Time Complexity: O(n)
+
+We maintain a stack that store open parentheses and pop the top out if the corresponding parenthesis is found.
+
+```python3
 class Solution:
     def isValid(self, s: str) -> bool:
         parens = []
@@ -10,3 +20,6 @@ class Solution:
             else:
                 parens.append(c)
         return len(parens) == 0
+
+```
+
