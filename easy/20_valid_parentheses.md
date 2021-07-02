@@ -2,7 +2,7 @@
 https://leetcode.com/problems/valid-parentheses/
 
 ## Solution: Implementation using stack
-### Language: C++
+### Language: Python 3
 ### Time Complexity: O(n)
 
 We maintain a stack that store open parentheses and pop the top out if the corresponding parenthesis is found.
