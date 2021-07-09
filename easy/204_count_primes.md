@@ -4,7 +4,7 @@ https://leetcode.com/problems/count-primes/
 ## Solution: Sieve of Eratosthenes
 ### Language: Python 3
 
-The code below uses the sieve of Eratosthenes to screen out non-prime numbers. Note that we only need to screen those numbers until $\sqrt{n}$.
+The code below uses the sieve of Eratosthenes to screen out non-prime numbers. Note that we only need to screen those numbers until sqrt(n). Because the number after that will not be a factor of any numbers after that.
 
 ```python3
 class Solution:
