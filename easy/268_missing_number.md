@@ -1,11 +1,36 @@
 # Missing Number
 https://leetcode.com/problems/missing-number/
 
-## Solution: Mathematical solution
+## 1st Solution: Virtual Indexing
 ### Language: Python 3
+### Time Complexity: O(n)
 
-The number of trailing zeroes can be determined by counting the number of five multiples in from 1 to n. Also, we need to find the number of multiple of five squared and tripled and so on.
-The summation of those numbers will be the answer.
+For each element in the list, we negate the value of index represented by that number. As a result, the index at which its corresponding number is not negated, is the answer.
+But zeroes have to be treated differently as there are no differences between zero and its negation.
+
+```python3
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        allLess = True
+        zeroIndex = -1
+        for i, num in enumerate(nums):
+            if abs(num) >= len(nums):
+                allLess = False
+                continue
+            if num == 0:
+                zeroIndex = i
+            nums[abs(num)] *= -1
+        for i, num in enumerate(nums):
+            if num > 0:
+                return i
+        return (0 if zeroIndex == a-1 else zeroIndex) if not allLess else len(nums)
+```
+
+## 2nd Solution: Summation Difference
+### Language: Python 3
+### Time Complexity: O(n)
+
+The difference between sum from 1..n and the sum of the list, will be the answer.
 
 ```python3
 class Solution:
